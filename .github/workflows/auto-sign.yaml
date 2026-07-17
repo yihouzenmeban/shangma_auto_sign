@@ -3,8 +3,9 @@ name: Run Auto Sign
 on:
   workflow_dispatch:
   schedule:
-    # UTC time
-    - cron: "0 0 * * *"
+    # Beijing time
+    - cron: "0 6 * * *"
+      timezone: "Asia/Shanghai"
 
 env:
   SM_USERNAME: ${{ secrets.SM_USERNAME }}
